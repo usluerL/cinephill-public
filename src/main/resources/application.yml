@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/movie-db
+    username: admin
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+    database: mysql
+  security:
+    user:
+      name: user
+      password: osman
+
+app:
+  jwtSecretKey: yourSecretKey
+  expiration: 1500000000
+
+tmdb:
+  api:
+    url: https://api.themoviedb.org/3/
+    key: your_ip_key
+
+aws:
+  access-key: accessKey
+  secret-key: secretKey
+  region: aws-region
+  topicArn: aws-sns-topic-arn
+
